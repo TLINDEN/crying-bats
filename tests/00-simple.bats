@@ -18,7 +18,7 @@ setup() {
 }
 
 @test test2 {
-  run echo "date was now"
+  run echo "date was $date"
   assert_success
   assert_output --partial "$date"
 }
